@@ -1,20 +1,6 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #b78fd8;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +10,75 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.headerComponent {
+  position: relative;
+  top: 10%;
+  right: 20%;
+  width: 100%;
+  padding: 3%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-link {
+  color: #000000;
+  font-size: 20px;
+}
+
+.buttonAdd {
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: rgb(99, 136, 192);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  overflow: hidden;
+  position: relative;
+  float: right;
+}
+
+.buttonAdd:hover{
+  background-color: #193f55;
+  color: rgb(255, 255, 255);
+}
+
+.buttonDelete {
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: rgb(179, 66, 66);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  align-items: right;
+}
+.buttonDelete:hover{
+  background-color: #a52b2b;
+  color: rgb(255, 255, 255);
+}
+
+.InputStyle {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 12px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(5, 5, 5);
+  border-radius: 9px;
+  font-size: large;
+}
+
+.IntegerTable {
+  margin: 4px;
+  padding: 2%;
+  width: 100%;
+  height: 90%;
+  text-align: left;
+  border-style: solid rgb(167, 72, 72);
+  position: relative;
+  right: 30%;
+  top: 50%;
 }
