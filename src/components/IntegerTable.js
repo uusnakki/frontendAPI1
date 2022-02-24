@@ -2,8 +2,8 @@ import { useState } from 'react';
 import '../App.css';
 import axios from 'axios'
 
-const multiUrl = 'http://localhost:3001/math/multipleprimes'
-const intUrl = 'http://localhost:3001/math/prime'
+const multiUrl = '/math/multipleprimes'
+const intUrl = '/math/prime'
 
 
 const IntegerTable = () => {
